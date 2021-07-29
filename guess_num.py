@@ -4,12 +4,16 @@
 # 猜錯的話 要告訴他 比答案大/小
 
 import random
+a = input('請輸入最小範圍的數值')
+b = input('請輸入最大範圍的數值')
+a = int(a)
+b = int(b)
 
-r = random.randint(1, 100)
+r = random.randint(a, b)
 count = 0
 while True:
 	count += 1
-	num = input('請輸入1~100的數字: ')
+	num = input('請輸入範圍內的數字: ')
 	num = int(num)
 	if num == r:
 		print('終於猜對了')
